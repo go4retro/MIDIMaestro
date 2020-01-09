@@ -9987,7 +9987,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="R3" library="resistor" deviceset="R-US_" device="0204/7" value="220"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="0204/7" value="220"/>
 <part name="R10" library="resistor" deviceset="R-US_" device="0204/7" value="220"/>
-<part name="V8" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY30" library="supply2" deviceset="GND" device=""/>
 <part name="OK1" library="optocoupler-jlb" deviceset="6N138" device=""/>
@@ -10001,6 +10000,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="OUT" library="jumper-jlb" deviceset="JP1Q" device=""/>
 <part name="THRU" library="jumper-jlb" deviceset="JP1Q" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10010,10 +10010,10 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <text x="233.68" y="121.92" size="1.778" layer="96">MIDI OUT</text>
 <text x="233.68" y="172.72" size="1.778" layer="96">MIDI IN</text>
 <text x="231.14" y="147.32" size="1.778" layer="96">MIDI THRU</text>
-<wire x1="116.84" y1="60.96" x2="170.18" y2="60.96" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="170.18" y1="60.96" x2="170.18" y2="2.54" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="116.84" y1="53.34" x2="170.18" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="170.18" y1="53.34" x2="170.18" y2="2.54" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="170.18" y1="2.54" x2="116.84" y2="2.54" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="116.84" y1="2.54" x2="116.84" y2="60.96" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="116.84" y1="2.54" x2="116.84" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
 <text x="119.38" y="5.08" size="1.778" layer="97">Optional LED Indicators</text>
 </plain>
 <instances>
@@ -10087,14 +10087,13 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <instance part="D1" gate="G$1" x="205.74" y="193.04" rot="R90"/>
 <instance part="QG1" gate="1" x="78.74" y="96.52"/>
 <instance part="V6" gate="G$1" x="63.5" y="116.84"/>
-<instance part="LED1" gate="G$1" x="149.86" y="48.26" rot="R90"/>
-<instance part="LED2" gate="G$1" x="149.86" y="33.02" rot="R90"/>
-<instance part="LED3" gate="G$1" x="149.86" y="17.78" rot="R90"/>
+<instance part="LED1" gate="G$1" x="142.24" y="48.26" rot="R90"/>
+<instance part="LED2" gate="G$1" x="142.24" y="33.02" rot="R90"/>
+<instance part="LED3" gate="G$1" x="142.24" y="17.78" rot="R90"/>
 <instance part="JP1" gate="1" x="149.86" y="157.48" rot="MR270"/>
-<instance part="R3" gate="G$1" x="129.54" y="48.26" rot="R180"/>
-<instance part="R6" gate="G$1" x="129.54" y="33.02" rot="R180"/>
-<instance part="R10" gate="G$1" x="129.54" y="17.78" rot="R180"/>
-<instance part="V8" gate="G$1" x="121.92" y="53.34"/>
+<instance part="R3" gate="G$1" x="160.02" y="48.26"/>
+<instance part="R6" gate="G$1" x="160.02" y="33.02"/>
+<instance part="R10" gate="G$1" x="160.02" y="17.78"/>
 <instance part="SUPPLY4" gate="GND" x="218.44" y="111.76"/>
 <instance part="SUPPLY30" gate="GND" x="226.06" y="68.58"/>
 <instance part="OK1" gate="G$1" x="182.88" y="187.96" rot="MR0"/>
@@ -10105,10 +10104,11 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <instance part="SUPPLY33" gate="GND" x="104.14" y="5.08"/>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
 <instance part="FRAME2" gate="G$2" x="172.72" y="0"/>
-<instance part="IN" gate="A" x="147.32" y="40.64" rot="R270"/>
-<instance part="OUT" gate="A" x="147.32" y="25.4" rot="R270"/>
-<instance part="THRU" gate="A" x="147.32" y="10.16" rot="R270"/>
+<instance part="IN" gate="A" x="142.24" y="40.64" rot="R270"/>
+<instance part="OUT" gate="A" x="142.24" y="25.4" rot="R270"/>
+<instance part="THRU" gate="A" x="142.24" y="10.16" rot="R270"/>
 <instance part="SUPPLY1" gate="GND" x="96.52" y="78.74"/>
+<instance part="SUPPLY34" gate="GND" x="167.64" y="7.62"/>
 </instances>
 <busses>
 </busses>
@@ -10246,6 +10246,20 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="99.06" y1="106.68" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
 <junction x="96.52" y="106.68"/>
 </segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="48.26" x2="167.64" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="48.26" x2="167.64" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="33.02" x2="167.64" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="17.78" x2="167.64" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="33.02" x2="167.64" y2="33.02" width="0.1524" layer="91"/>
+<junction x="167.64" y="33.02"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="17.78" x2="167.64" y2="17.78" width="0.1524" layer="91"/>
+<junction x="167.64" y="17.78"/>
+<pinref part="SUPPLY34" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -10366,20 +10380,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="63.5" y1="114.3" x2="63.5" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="QG1" gate="1" pin="VCC"/>
 <wire x1="63.5" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="V8" gate="G$1" pin="VCC"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="50.8" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="48.26" x2="121.92" y2="33.02" width="0.1524" layer="91"/>
-<junction x="121.92" y="48.26"/>
-<wire x1="121.92" y1="33.02" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="33.02" x2="121.92" y2="17.78" width="0.1524" layer="91"/>
-<junction x="121.92" y="33.02"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="17.78" x2="124.46" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY32" gate="G$1" pin="VCC"/>
@@ -10887,35 +10887,16 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="157.48" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="134.62" y1="33.02" x2="137.16" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="OUT" gate="A" pin="1"/>
-<wire x1="137.16" y1="33.02" x2="147.32" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="25.4" x2="137.16" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="25.4" x2="137.16" y2="33.02" width="0.1524" layer="91"/>
-<junction x="137.16" y="33.02"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="134.62" y1="17.78" x2="137.16" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="THRU" gate="A" pin="1"/>
-<wire x1="137.16" y1="17.78" x2="147.32" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="10.16" x2="137.16" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="10.16" x2="137.16" y2="17.78" width="0.1524" layer="91"/>
-<junction x="137.16" y="17.78"/>
-</segment>
-</net>
 <net name="LED_IN" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="154.94" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
-<label x="157.48" y="48.26" size="1.27" layer="95" ratio="10" xref="yes"/>
+<label x="129.54" y="48.26" size="1.27" layer="95" ratio="10" rot="R180" xref="yes"/>
+<pinref part="IN" gate="A" pin="1"/>
+<wire x1="134.62" y1="40.64" x2="132.08" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="40.64" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="132.08" y1="48.26" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
+<junction x="132.08" y="48.26"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="D" pin="O"/>
@@ -10923,17 +10904,17 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="180.34" y1="106.68" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
 <label x="180.34" y="109.22" size="1.27" layer="95" ratio="10" rot="R90" xref="yes"/>
 </segment>
-<segment>
-<wire x1="154.94" y1="40.64" x2="157.48" y2="40.64" width="0.1524" layer="91"/>
-<label x="157.48" y="40.64" size="1.27" layer="95" ratio="10" xref="yes"/>
-<pinref part="IN" gate="A" pin="2"/>
-</segment>
 </net>
 <net name="LED_OUT" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="154.94" y1="33.02" x2="157.48" y2="33.02" width="0.1524" layer="91"/>
-<label x="157.48" y="33.02" size="1.27" layer="95" ratio="10" xref="yes"/>
+<label x="129.54" y="33.02" size="1.27" layer="95" ratio="10" rot="R180" xref="yes"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="OUT" gate="A" pin="1"/>
+<wire x1="132.08" y1="33.02" x2="139.7" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="25.4" x2="132.08" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="25.4" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
+<junction x="132.08" y="33.02"/>
+<wire x1="129.54" y1="33.02" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="132.08" x2="180.34" y2="132.08" width="0.1524" layer="91"/>
@@ -10944,17 +10925,17 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <junction x="180.34" y="132.08"/>
 <label x="180.34" y="134.62" size="1.27" layer="95" ratio="10" rot="R90" xref="yes"/>
 </segment>
-<segment>
-<wire x1="154.94" y1="25.4" x2="157.48" y2="25.4" width="0.1524" layer="91"/>
-<label x="157.48" y="25.4" size="1.27" layer="95" ratio="10" xref="yes"/>
-<pinref part="OUT" gate="A" pin="2"/>
-</segment>
 </net>
 <net name="LED_THRU" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<wire x1="154.94" y1="17.78" x2="157.48" y2="17.78" width="0.1524" layer="91"/>
-<label x="157.48" y="17.78" size="1.27" layer="95" ratio="10" xref="yes"/>
+<label x="129.54" y="17.78" size="1.27" layer="95" ratio="10" rot="R180" xref="yes"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="THRU" gate="A" pin="1"/>
+<wire x1="132.08" y1="17.78" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="10.16" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="10.16" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
+<junction x="132.08" y="17.78"/>
+<wire x1="129.54" y1="17.78" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="157.48" x2="180.34" y2="157.48" width="0.1524" layer="91"/>
@@ -10964,11 +10945,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="180.34" y1="157.48" x2="180.34" y2="160.02" width="0.1524" layer="91"/>
 <junction x="180.34" y="157.48"/>
 <label x="180.34" y="160.02" size="1.27" layer="95" ratio="10" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<wire x1="154.94" y1="10.16" x2="157.48" y2="10.16" width="0.1524" layer="91"/>
-<label x="157.48" y="10.16" size="1.27" layer="95" ratio="10" xref="yes"/>
-<pinref part="THRU" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -10986,14 +10962,38 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="IN" gate="A" pin="1"/>
-<wire x1="139.7" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="40.64" x2="137.16" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="134.62" y1="48.26" x2="137.16" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="48.26" x2="147.32" y2="48.26" width="0.1524" layer="91"/>
-<junction x="137.16" y="48.26"/>
+<wire x1="147.32" y1="48.26" x2="152.4" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="IN" gate="A" pin="2"/>
+<wire x1="152.4" y1="48.26" x2="154.94" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="40.64" x2="152.4" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="40.64" x2="152.4" y2="48.26" width="0.1524" layer="91"/>
+<junction x="152.4" y="48.26"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="OUT" gate="A" pin="2"/>
+<wire x1="152.4" y1="33.02" x2="154.94" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="25.4" x2="152.4" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="25.4" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
+<junction x="152.4" y="33.02"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="17.78" x2="152.4" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="THRU" gate="A" pin="2"/>
+<wire x1="152.4" y1="17.78" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="10.16" x2="152.4" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="10.16" x2="152.4" y2="17.78" width="0.1524" layer="91"/>
+<junction x="152.4" y="17.78"/>
 </segment>
 </net>
 </nets>
