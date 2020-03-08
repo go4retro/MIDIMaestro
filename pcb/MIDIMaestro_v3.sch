@@ -9920,15 +9920,15 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </class>
 </classes>
 <parts>
-<part name="R8" library="resistor" deviceset="R-US_" device="0204/7" value="220R"/>
-<part name="R9" library="resistor" deviceset="R-US_" device="0204/7" value="220R"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="220R"/>
-<part name="R2" library="resistor" deviceset="R-US_" device="0204/7" value="220R"/>
+<part name="R8" library="resistor" deviceset="R-US_" device="0204/7" value="220"/>
+<part name="R9" library="resistor" deviceset="R-US_" device="0204/7" value="220"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="220"/>
+<part name="R2" library="resistor" deviceset="R-US_" device="0204/7" value="220"/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
-<part name="R1" library="resistor" deviceset="R-US_" device="0204/7" value="220R"/>
+<part name="R1" library="resistor" deviceset="R-US_" device="0204/7" value="220"/>
 <part name="R7" library="resistor" deviceset="R-US_" device="0204/7" value="1K"/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
-<part name="R4" library="resistor" deviceset="R-US_" device="0204/7" value="270R"/>
+<part name="R4" library="resistor" deviceset="R-US_" device="0204/7" value="270"/>
 <part name="V2" library="supply2" deviceset="VCC" device=""/>
 <part name="V5" library="supply2" deviceset="VCC" device=""/>
 <part name="V12" library="supply2" deviceset="VCC" device=""/>
@@ -9938,8 +9938,8 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="V1" library="supply2" deviceset="VCC" device=""/>
 <part name="IC3" library="74xx-us-jlb" deviceset="74*138" device="N" technology="LS"/>
 <part name="X1" library="con-hirschmann" deviceset="MAB5SH" device="" value="MIDI_IN"/>
-<part name="X2" library="con-hirschmann" deviceset="MAB5SH" device="" value="MIDI_THRU"/>
-<part name="X3" library="con-hirschmann" deviceset="MAB5SH" device="" value="MIDI_OUT"/>
+<part name="X3" library="con-hirschmann" deviceset="MAB5SH" device="" value="MIDI_THRU"/>
+<part name="X2" library="con-hirschmann" deviceset="MAB5SH" device="" value="MIDI_OUT"/>
 <part name="IC4" library="micro-motorola" deviceset="6850" device="-RP" value="68B50"/>
 <part name="V3" library="supply2" deviceset="VCC" device=""/>
 <part name="IC5" library="74xx-us-jlb" deviceset="74*04" device="N" technology="LS"/>
@@ -9974,9 +9974,9 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="SUPPLY27" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
-<part name="IC6" library="74xx-us-jlb" deviceset="74*160" device="N" value="74*161"/>
+<part name="IC6" library="74xx-us-jlb" deviceset="74*160" device="N" value="74LS161"/>
 <part name="V4" library="supply2" deviceset="VCC" device=""/>
-<part name="D1" library="diode-jlb" deviceset="1N4148" device="DO35-7"/>
+<part name="D1" library="diode-jlb" deviceset="1N4148" device="DO35-7" value="1N4148"/>
 <part name="QG1" library="crystal" deviceset="QG5460" device="" value="4MHz"/>
 <part name="V6" library="supply2" deviceset="VCC" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="3MM"/>
@@ -10034,8 +10034,8 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <instance part="V1" gate="G$1" x="15.24" y="205.74"/>
 <instance part="IC3" gate="A" x="68.58" y="185.42"/>
 <instance part="X1" gate="G$1" x="238.76" y="185.42"/>
-<instance part="X2" gate="G$1" x="238.76" y="160.02"/>
-<instance part="X3" gate="G$1" x="238.76" y="134.62"/>
+<instance part="X3" gate="G$1" x="238.76" y="160.02"/>
+<instance part="X2" gate="G$1" x="238.76" y="134.62"/>
 <instance part="IC4" gate="A" x="109.22" y="170.18"/>
 <instance part="V3" gate="G$1" x="91.44" y="205.74"/>
 <instance part="IC5" gate="B" x="167.64" y="132.08"/>
@@ -10116,12 +10116,12 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <segment>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="256.54" y1="129.54" x2="256.54" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="X3" gate="G$1" pin="2"/>
+<pinref part="X2" gate="G$1" pin="2"/>
 <wire x1="254" y1="129.54" x2="256.54" y2="129.54" width="0.1524" layer="91"/>
 <junction x="256.54" y="129.54"/>
 <wire x1="256.54" y1="154.94" x2="256.54" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="254" y1="154.94" x2="256.54" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="2"/>
+<pinref part="X3" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="218.44" y1="114.3" x2="218.44" y2="177.8" width="0.1524" layer="91"/>
@@ -10390,7 +10390,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <segment>
 <wire x1="226.06" y1="132.08" x2="215.9" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="X3" gate="G$1" pin="5"/>
+<pinref part="X2" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -10430,7 +10430,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <segment>
 <wire x1="215.9" y1="157.48" x2="226.06" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="X2" gate="G$1" pin="5"/>
+<pinref part="X3" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -10444,14 +10444,14 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <segment>
 <wire x1="251.46" y1="157.48" x2="259.08" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="X2" gate="G$1" pin="4"/>
+<pinref part="X3" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <wire x1="251.46" y1="132.08" x2="259.08" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="X3" gate="G$1" pin="4"/>
+<pinref part="X2" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -10948,9 +10948,9 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="X2" gate="G$1" pin="PE"/>
-<wire x1="226.06" y1="152.4" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="X3" gate="G$1" pin="PE"/>
+<wire x1="226.06" y1="152.4" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="PE"/>
 <wire x1="220.98" y1="127" x2="226.06" y2="127" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="127" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
 <junction x="220.98" y="127"/>
